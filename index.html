@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form2style.css">
+</head>
+<body>
+    <header><h1>Just A Form</h1></header>
+    <form class="form" id="form" method="get" name="myform">
+        <p class="field required" id="fnamep">
+        <label for="fullname" class="label required">Full name </label>
+        <input type="text" name="fullname" value="Use tab" class ="text-input" id="fname" required><span class="formerror"></span>
+        </p>
+        <p class="field required half" id="emailp">
+            <label for="email" class="label">E-mail</label>
+            <input type="email" name="E-mail" id="email" class="text-input" required><span class="formerror"></span>
+        </p>
+
+        <p class="field half" id="phonep">
+            <label for="phone" class="label">Phone</label>
+            <input type="phone" name="phone" id="phone" class="text-input" required><span class="formerror"></span>
+        </p>
+        <p class="half field error">
+            <label for="login" class="label" id="login">Login</label>
+            <input type="text" class="text-input" id="login" name="login">
+        </p>
+        <p class="half field password">
+            <label for="password" class="label">Password</label>
+            <input type="password" class="text-input" id="password" name="password">
+        </p>
+
+        <div class="field">
+            <label for="" class="label">Sports?</label>
+            <ul class="checkboxes">
+                <li class="checkbox">
+                    <input type="checkbox" name="choice" id="choice-0" for="choice-0" value="0" class="checkbox-input">
+                    <label for="choice-0" class="checkbox-label">Football</label>
+                </li>
+                <li class="checkbox">
+                    <input type="checkbox" name="choice" id="choice-1" for="choice-1" value="1" class="checkbox-input">
+                    <label for="choice-1" class="checkbox-label">Volleyball</label>
+                </li>
+                <li class="checkbox">
+                    <input type="checkbox" name="choice" id="choice-2" for="choice-2" value="2" class="checkbox-input">
+                    <label for="choice-2" class="checkbox-label">Basketball</label>
+                </li>
+                <li class="checkbox">
+                    <input type="checkbox" name="choice" id="choice-3" for="choice-3" value="3" class="checkbox-input">
+                    <label for="choice-3" class="checkbox-label">Cricket</label>
+                </li>
+                <li class="checkbox">
+                    <input type="checkbox" name="choice" id="choice-4" for="choice-4" value="4" class="checkbox-input">
+                    <label for="choice-4" class="checkbox-label">Swimming</label>
+                </li>
+            </ul>
+
+        </div>
+        <div class="field">
+            <label for="" class="label">Favourite JS Framework</label>
+            <ul class="options">
+                <li class="option">
+                    <input type="radio" name="option" id="option-0" class="option-input" value="0">
+                    <label for="option-0" class="option-label">React</label>
+                </li>
+                <li class="option">
+                    <input type="radio" name="option" id="option-1" class="option-input" value="1">
+                    <label for="option-1" class="option-label">Vue</label>
+                </li>
+                <li class="option">
+                    <input type="radio" name="option" id="option-2" class="option-input" value="2">
+                    <label for="option-2" class="option-label">Next</label>
+                </li>
+                <li class="option">
+                    <input type="radio" name="option" id="option-3" class="option-input" value="3">
+                    <label for="option-3" class="option-label">Angular</label>
+                </li>
+                <li class="option">
+                    <input type="radio" name="option" id="option-4" class="option-input" value="4">
+                    <label for="option-4" class="option-label">Riot</label>
+                </li>
+                <li class="option">
+                    <input type="radio" name="option" id="option-5" class="option-input" value="5">
+                    <label for="option-5" class="option-label">Meteor</label>
+                </li>
+                <li class="option">
+                    <input type="radio" name="option" id="option-6" class="option-input" value="6">
+                    <label for="option-6" class="option-label">Ember</label>
+                </li>
+                <li class="option">
+                    <input type="radio" name="option" id="option-7" class="option-input" value="7">
+                    <label for="option-7" class="option-label">Polymer</label>
+                </li>
+                <li class="option">
+                    <input type="radio" name="option" id="option-8" class="option-input" value="8">
+                    <label for="option-8" class="option-label">Knockout</label>
+                </li>
+            </ul>
+        </div>
+        <p class="field">
+            <label for="about" class="label">About</label>
+            <textarea name="about" id="about" cols="50" rows="5" class="textarea"></textarea>
+        </p>
+        <p class="field half">
+            <label for="select" class="label">Position</label>
+            <select class='select' id='select'>
+                <option selected value=''></option>
+                <option value='ceo'>CEO</option>
+                <option value='front-end'>Front-end developer</option>
+                <option value='back-end'>Back-end developer</option>
+              </select>
+            </p>
+            <p class='field half'>
+              <input class='button' type="button" value='Send'>
+            </p>
+
+    </form>
+
+    
+</body>
+</html>
